@@ -94,4 +94,4 @@ def on_data(data):
 
 
 if any(platform.win32_ver()):
-    socketio.run(app, debug=True, host="0.0.0.0", port=80)
+    socketio.run(app, debug=True, host="0.0.0.0", port=5000)
