@@ -3,7 +3,8 @@ var _peer_list = {};
 
 // socketio 
 var protocol = window.location.protocol;
-var socket = io(protocol + '//' + document.domain + ':' + location.port, {autoConnect: true});
+var socket = io("https://video-conferencing-flask-webrtc-959b.onrender.com", {
+  transports: ["websocket"],);
 
 document.addEventListener("DOMContentLoaded", (event)=>{
     startCamera();
